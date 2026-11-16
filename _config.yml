@@ -1,0 +1,11 @@
+title: Video Vibe
+description: App information and privacy documents for Video Vibe.
+url: "https://ilyakozar-oss.github.io"
+baseurl: "/video-vibe-legal"
+lang: en
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

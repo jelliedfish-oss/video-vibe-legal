@@ -1,0 +1,51 @@
+:root {
+  color-scheme: dark;
+  --background: #101425;
+  --surface: #1c223b;
+  --text: #f5f6ff;
+  --muted: #b9c1d8;
+  --accent: #aab6ff;
+  --line: #303953;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--background); color: var(--text); }
+a { color: var(--accent); text-underline-offset: .22em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; border-radius: 4px; }
+.wrap { width: min(100% - 48px, 1000px); margin-inline: auto; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 28px; border-bottom: 1px solid var(--line); }
+.brand { display: inline-flex; align-items: center; gap: 12px; color: var(--text); font-size: 1.1rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.brand-icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 13px; background: var(--accent); color: #101425; font-size: 24px; font-weight: 800; }
+nav a { font-size: .9rem; display: inline-block; padding-block: 10px; }
+.site-main { flex: 1; padding-block: 76px 96px; }
+.eyebrow { margin: 0 0 18px; font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+h1, h2, h3 { line-height: 1.15; letter-spacing: -.035em; overflow-wrap: anywhere; }
+h1 { margin: 0 0 24px; font-size: clamp(2.5rem, 7vw, 4.7rem); font-weight: 750; }
+.intro { max-width: 610px; margin: 0 0 44px; color: var(--muted); font-size: 1.2rem; }
+.policy-card { display: flex; align-items: center; justify-content: space-between; gap: 24px; max-width: 680px; padding: 28px; border: 1px solid var(--line); border-radius: 22px; background: var(--surface); color: var(--text); text-decoration: none; }
+.policy-card:hover { border-color: var(--accent); }
+.card-title { display: block; margin-block: 0 6px; font-size: 1.35rem; font-weight: 700; letter-spacing: -.02em; }
+.card-detail { display: block; color: var(--muted); font-size: .94rem; }
+.card-arrow { color: var(--accent); font-size: 1.8rem; }
+.document { max-width: 760px; padding-top: 56px; }
+.document h1 { font-size: clamp(2rem, 6vw, 3.3rem); }
+.document h2 { margin-top: 2em; font-size: 1.55rem; }
+.document p, .document li { color: var(--muted); }
+.notice { padding: 20px 24px; margin-bottom: 36px; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; }
+.notice strong { color: var(--text); }
+.notice p { margin: 4px 0 0; font-size: .93rem; }
+.site-footer { display: flex; justify-content: space-between; gap: 24px; padding-block: 24px 36px; border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+.skip-link { position: absolute; top: 12px; left: 12px; z-index: 10; padding: 10px 16px; background: var(--text); color: var(--background); transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+@media (max-width: 480px) {
+  .wrap { width: min(100% - 32px, 1000px); }
+  .site-header { gap: 12px; padding-block: 20px; }
+  .brand { gap: 8px; font-size: .98rem; }
+  .brand-icon { width: 34px; height: 34px; border-radius: 11px; }
+  nav a { font-size: .8rem; }
+  .site-main { padding-block: 52px 64px; }
+  .policy-card { padding: 24px 20px; }
+}
