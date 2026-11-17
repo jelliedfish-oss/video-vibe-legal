@@ -8,7 +8,10 @@
       <h1 id="app-title">Video Vibe</h1>
     </div>
     <p class="intro">{{ t.app_description }}</p>
-    <a class="hero-action" href="#documents">{{ t.documents }} <span aria-hidden="true">↗</span></a>
+    <div class="hero-links">
+      <a class="hero-action" href="#capabilities">{{ t.capabilities_link }} <span aria-hidden="true">↓</span></a>
+      <a class="hero-secondary" href="#documents">{{ t.documents }}</a>
+    </div>
   </div>
   <figure class="route-preview" aria-labelledby="route-preview-title">
     <div class="preview-heading">
@@ -38,6 +41,35 @@
   </li>
   {% endfor %}
 </ol>
+<section id="capabilities" class="capabilities-section" aria-labelledby="capabilities-title">
+  <h2 id="capabilities-title" class="section-title">{{ t.capabilities_title }}</h2>
+  <p class="section-intro">{{ t.capabilities_intro }}</p>
+  <div class="capability-grid">
+    {% for capability in t.capabilities %}
+    <article class="capability-card">
+      <h3>{{ capability.title }}</h3>
+      <ul>
+        {% for point in capability.points %}
+        <li>{{ point }}</li>
+        {% endfor %}
+      </ul>
+      {% if capability.note %}<p class="capability-note">{{ capability.note }}</p>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</section>
+<section class="getting-started" aria-labelledby="getting-started-title">
+  <h2 id="getting-started-title" class="section-title">{{ t.getting_started_title }}</h2>
+  <ol class="walk-steps">
+    {% for step in t.getting_started %}
+    <li>
+      <span class="feature-number" aria-hidden="true">0{{ forloop.index }}</span>
+      <h3>{{ step.title }}</h3>
+      <p>{{ step.description }}</p>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
 <section id="documents" aria-labelledby="documents-title">
 <h2 id="documents-title" class="section-title">{{ t.documents }}</h2>
 <p class="section-intro">{{ t.intro }}</p>

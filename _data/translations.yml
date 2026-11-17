@@ -11,6 +11,42 @@ en:
       description: Build a route with your own stops, photos, video and audio, and keep private notes along the way.
     - title: Share with friends
       description: Share your routes with friends so they can discover the same places.
+  capabilities_link: Explore features
+  capabilities_title: More than a list of places
+  capabilities_intro: Plan a walk, discover the stories behind each stop and collect routes you want to return to. Video Vibe brings the route, its media and your own observations together.
+  capabilities:
+    - title: Find a walk that fits your day
+      points:
+        - Search by route name, filter by theme or choose a walk of up to 45 minutes.
+        - Check the estimated duration, stop list and route description before you start.
+        - Set a reminder for a walk at a time you choose.
+    - title: Follow the route at your own pace
+      points:
+        - Open stops from the list or map, and use your current location to orient yourself.
+        - Read stories, view photographs and short videos, and listen to audio guides with playback controls.
+        - Mark places as visited, keep track of your progress and write private notes for individual stops.
+    - title: Create a walk and pass it on
+      points:
+        - Build a route with a title, description, theme, duration and an ordered list of stops.
+        - Add place coordinates and attach your own photographs, video and audio.
+        - Reopen your routes from the library and continue editing them.
+        - Share catalogue routes with a link that opens in Video Vibe, or transfer a personal route to a friend’s device.
+      note: Personal routes are transferred between devices on the same local network, using a pairing code and confirmation from the sender. Both people need Video Vibe; the transfer also requires an internet connection.
+    - title: Keep your walks in one place
+      points:
+        - Find saved, started, completed, created and downloaded routes in your personal library.
+        - Download a route’s text and media in advance, and manage downloaded materials in your profile.
+        - Sign in with a password, then enable Face ID or Touch ID on a supported device after a successful sign-in.
+        - Use the interface in English or Russian.
+      note: The map requires an internet connection.
+  getting_started_title: Your next walk in three steps
+  getting_started:
+    - title: Choose or create
+      description: Pick a ready-made route or put together your own places and stories.
+    - title: Explore the stops
+      description: Open places on the map, listen to stories and mark the stops you visit.
+    - title: Keep and share
+      description: Save the route, leave personal notes and share the walk with friends.
   route_example:
     label: Route example
     city: Saint Petersburg
@@ -56,6 +92,42 @@ ru:
       description: Собирайте маршрут из своих остановок, фото, видео и аудио и сохраняйте личные заметки по пути.
     - title: Делитесь с друзьями
       description: Делитесь своими маршрутами с друзьями, чтобы они тоже могли открыть эти места.
+  capabilities_link: Возможности
+  capabilities_title: Больше, чем список мест
+  capabilities_intro: Планируйте прогулку, узнавайте истории каждой остановки и собирайте маршруты, к которым захочется вернуться. В Video Vibe маршрут, медиаматериалы и ваши впечатления находятся рядом.
+  capabilities:
+    - title: Найдите прогулку под свои планы
+      points:
+        - Ищите маршруты по названию, выбирайте тему или прогулку продолжительностью до 45 минут.
+        - Перед началом посмотрите примерное время прогулки, список остановок и описание маршрута.
+        - Настройте напоминание о прогулке на удобное время.
+    - title: Проходите маршрут в своём темпе
+      points:
+        - Открывайте остановки из списка или на карте и ориентируйтесь по своей текущей геопозиции.
+        - Читайте истории, смотрите фотографии и короткие видео, слушайте аудиогиды с управлением воспроизведением.
+        - Отмечайте посещённые места, сохраняйте прогресс прогулки и оставляйте личные заметки к отдельным остановкам.
+    - title: Создайте прогулку и поделитесь ею
+      points:
+        - Задайте название, описание, тему и длительность маршрута, соберите остановки в нужном порядке.
+        - Укажите координаты мест и добавьте собственные фотографии, видео и аудио.
+        - Возвращайтесь к своим маршрутам из библиотеки и продолжайте редактирование.
+        - Отправляйте ссылки на маршруты каталога, которые открываются в Video Vibe, или передавайте личный маршрут на устройство друга.
+      note: Личные маршруты передаются между устройствами в одной локальной сети по коду сопряжения и с подтверждением отправителя. У обоих участников должен быть Video Vibe; для передачи также нужен интернет.
+    - title: Храните свои прогулки в одном месте
+      points:
+        - В личной библиотеке собраны избранные, начатые, завершённые, созданные и скачанные маршруты.
+        - Заранее скачивайте текст и медиа маршрута, а затем управляйте загрузками в профиле.
+        - Входите по паролю, а после успешной авторизации включите Face ID или Touch ID на поддерживаемом устройстве.
+        - Пользуйтесь интерфейсом на русском или английском языке.
+      note: Для отображения карты нужен интернет.
+  getting_started_title: Следующая прогулка — в три шага
+  getting_started:
+    - title: Выберите или создайте
+      description: Найдите готовый маршрут или соберите собственные места и истории.
+    - title: Исследуйте остановки
+      description: Открывайте места на карте, слушайте истории и отмечайте посещённые точки.
+    - title: Сохраните и поделитесь
+      description: Добавьте маршрут в библиотеку, оставьте личные заметки и поделитесь прогулкой с друзьями.
   route_example:
     label: Пример маршрута
     city: Санкт-Петербург
