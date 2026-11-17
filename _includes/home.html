@@ -1,8 +1,20 @@
 {% assign language = page.lang | default: 'en' %}
 {% assign t = site.data.translations[language] %}
-<p class="eyebrow">{{ t.app_information }}</p>
+<p class="eyebrow">{{ t.app_tagline }}</p>
 <h1>Video Vibe</h1>
-<p class="intro">{{ t.intro }}</p>
+<p class="intro">{{ t.app_description }}</p>
+<ol class="app-features" aria-label="{{ t.app_information }}">
+  {% for feature in t.features %}
+  <li class="app-feature">
+    <span class="feature-number" aria-hidden="true">0{{ forloop.index }}</span>
+    <h2>{{ feature.title }}</h2>
+    <p>{{ feature.description }}</p>
+  </li>
+  {% endfor %}
+</ol>
+<section aria-labelledby="documents-title">
+<h2 id="documents-title" class="section-title">{{ t.documents }}</h2>
+<p class="section-intro">{{ t.intro }}</p>
 <div class="policy-list">
   {% for section in site.legal_sections %}
   {% capture section_path %}/{{ language }}/{{ section }}/{% endcapture %}
@@ -15,3 +27,4 @@
   </a>
   {% endfor %}
 </div>
+</section>

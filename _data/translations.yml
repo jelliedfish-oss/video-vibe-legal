@@ -1,5 +1,15 @@
 en:
   app_information: App information
+  app_tagline: Walks, stories and city details
+  app_description: Discover Saint Petersburg through short walks, local stories and city details. Pick a route, explore each stop with photos, video stories and audio guides, and keep notes along the way.
+  features:
+    - title: Choose your route
+      description: Find a walk by theme and duration.
+    - title: Explore every stop
+      description: Discover stories through photos, video and audio.
+    - title: Keep your impressions
+      description: Save routes, mark visited places and write private notes.
+  documents: Documents & support
   intro: Privacy, terms and support information for the Video Vibe app.
   skip: Skip to content
   home_label: Video Vibe home
@@ -17,6 +27,16 @@ en:
       title: Help & Support
 ru:
   app_information: Информация о приложении
+  app_tagline: Прогулки, истории и детали города
+  app_description: Открывайте Санкт-Петербург через короткие прогулки, истории и детали города. Выбирайте маршрут, знакомьтесь с остановками по фотографиям, видеоисториям и аудиогидам и сохраняйте заметки по пути.
+  features:
+    - title: Выберите прогулку
+      description: Подбирайте маршрут по теме и времени.
+    - title: Узнавайте город
+      description: Истории мест — в фотографиях, видео и аудиогидах.
+    - title: Сохраняйте впечатления
+      description: Добавляйте маршруты в избранное, отмечайте посещённые места и ведите личные заметки.
+  documents: Документы и поддержка
   intro: Конфиденциальность, условия использования и помощь для приложения Video Vibe.
   skip: Перейти к содержимому
   home_label: Главная Video Vibe

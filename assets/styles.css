@@ -25,6 +25,13 @@ nav a { font-size: .9rem; display: inline-block; padding-block: 10px; }
 h1, h2, h3 { line-height: 1.15; letter-spacing: -.035em; overflow-wrap: anywhere; }
 h1 { margin: 0 0 24px; font-size: clamp(2.5rem, 7vw, 4.7rem); font-weight: 750; }
 .intro { max-width: 610px; margin: 0 0 44px; color: var(--muted); font-size: 1.2rem; }
+.app-features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin: 0 0 64px; padding: 0; list-style: none; }
+.app-feature { padding-top: 20px; border-top: 1px solid var(--line); }
+.feature-number { color: var(--accent); font-size: .82rem; font-weight: 700; }
+.app-feature h2 { margin: 12px 0 10px; font-size: 1.2rem; letter-spacing: -.02em; }
+.app-feature p { margin: 0; color: var(--muted); font-size: .94rem; }
+.section-title { margin: 0 0 16px; font-size: 2rem; }
+.section-intro { max-width: 610px; margin: 0 0 28px; color: var(--muted); }
 .policy-card { display: flex; align-items: center; justify-content: space-between; gap: 24px; max-width: 680px; padding: 28px; border: 1px solid var(--line); border-radius: 22px; background: var(--surface); color: var(--text); text-decoration: none; }
 .policy-card:hover { border-color: var(--accent); }
 .card-title { display: block; margin-block: 0 6px; font-size: 1.35rem; font-weight: 700; letter-spacing: -.02em; }
@@ -59,6 +66,9 @@ h1 { margin: 0 0 24px; font-size: clamp(2.5rem, 7vw, 4.7rem); font-weight: 750; 
 .policy-list { display: grid; gap: 16px; }
 .back-link { display: inline-block; min-height: 44px; padding-block: 10px; }
 .site-footer { flex-wrap: wrap; }
+@media (max-width: 680px) {
+  .app-features { grid-template-columns: 1fr; gap: 24px; margin-bottom: 48px; }
+}
 @media (max-width: 480px) {
   .primary-nav { column-gap: 16px; }
   .language-switch a { padding-inline: 8px; }

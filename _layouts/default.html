@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="dark light">
     <title>{% if page.home %}{{ site.title | escape }}{% else %}{{ page.title | escape }} · {{ site.title | escape }}{% endif %}</title>
-    <meta name="description" content="{{ t.intro | escape }}">
+    <meta name="description" content="{{ t.app_description | escape }}">
     {% if page.content_status == 'pending' %}<meta name="robots" content="noindex, follow">{% endif %}
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     {% for code in site.languages %}
