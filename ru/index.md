@@ -1,5 +1,5 @@
 ---
-title: Video Vibe
+title: Видео Вайб
 home: true
 section: home
 lang: ru

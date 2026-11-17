@@ -1,6 +1,6 @@
 {% assign language = page.lang | default: 'en' %}
 {% assign t = site.data.translations[language] %}
-<p class="eyebrow">Video Vibe · {{ t.status }}</p>
+<p class="eyebrow">{{ t.app_name }} · {{ t.status }}</p>
 <h1>{{ t.sections[page.section].title }}</h1>
 <p class="intro">{{ t.placeholder }}</p>
 {% capture home_path %}/{{ language }}/{% endcapture %}
