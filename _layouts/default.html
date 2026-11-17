@@ -19,14 +19,15 @@
       {% endif %}
     <link rel="alternate" hreflang="{{ code }}" href="{{ alternate_path | absolute_url }}">
     {% endfor %}
-    <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ '/assets/app-icon.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/assets/app-icon.png' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
   <body>
     <a class="skip-link" href="#content">{{ t.skip }}</a>
     <header class="site-header wrap">
       <a class="brand" href="{{ home_path | relative_url }}" aria-label="{{ t.home_label }}">
-        <span class="brand-icon" aria-hidden="true">V</span>
+        <img class="brand-icon" src="{{ '/assets/app-icon.png' | relative_url }}" width="40" height="40" alt="">
         <span>Video Vibe</span>
       </a>
       <nav class="language-switch" aria-label="{{ t.language }}">

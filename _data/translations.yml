@@ -1,14 +1,32 @@
 en:
   app_information: App information
   app_tagline: Walks, stories and city details
-  app_description: Discover Saint Petersburg through short walks, local stories and city details. Pick a route, explore each stop with photos, video stories and audio guides, and keep notes along the way.
+  app_description: Discover Saint Petersburg with short walks, stories, photos, video and audio guides. Create routes of your own, add favourite places and share your walks with friends.
   features:
     - title: Choose your route
       description: Find a walk by theme and duration.
     - title: Explore every stop
       description: Discover stories through photos, video and audio.
-    - title: Keep your impressions
-      description: Save routes, mark visited places and write private notes.
+    - title: Create your own walks
+      description: Build a route with your own stops, photos, video and audio, and keep private notes along the way.
+    - title: Share with friends
+      description: Share your routes with friends so they can discover the same places.
+  route_example:
+    label: Route example
+    city: Saint Petersburg
+    title: Morning by the Water
+    metadata: 45 min · 4 stops
+    description: From Senate Square to the Winter Palace, along the Neva and its granite embankments.
+    image_alt: The Bronze Horseman monument against a blue sky beside the Neva.
+    stops_label: Stops on this route
+    stops:
+      - The Bronze Horseman
+      - Admiralty Embankment
+      - Palace Bridge
+      - The Winter Palace from the Neva
+    photo_credit: "Photo: Alex (Florstein) Fedorov"
+    photo_source: Wikimedia Commons
+    photo_changes: Cropped for display.
   documents: Documents & support
   intro: Privacy, terms and support information for the Video Vibe app.
   skip: Skip to content
@@ -28,14 +46,32 @@ en:
 ru:
   app_information: Информация о приложении
   app_tagline: Прогулки, истории и детали города
-  app_description: Открывайте Санкт-Петербург через короткие прогулки, истории и детали города. Выбирайте маршрут, знакомьтесь с остановками по фотографиям, видеоисториям и аудиогидам и сохраняйте заметки по пути.
+  app_description: Открывайте Санкт-Петербург через короткие прогулки, истории, фото, видео и аудиогиды. Создавайте собственные маршруты, добавляйте любимые места и делитесь прогулками с друзьями.
   features:
     - title: Выберите прогулку
       description: Подбирайте маршрут по теме и времени.
     - title: Узнавайте город
       description: Истории мест — в фотографиях, видео и аудиогидах.
-    - title: Сохраняйте впечатления
-      description: Добавляйте маршруты в избранное, отмечайте посещённые места и ведите личные заметки.
+    - title: Создавайте свои прогулки
+      description: Собирайте маршрут из своих остановок, фото, видео и аудио и сохраняйте личные заметки по пути.
+    - title: Делитесь с друзьями
+      description: Делитесь своими маршрутами с друзьями, чтобы они тоже могли открыть эти места.
+  route_example:
+    label: Пример маршрута
+    city: Санкт-Петербург
+    title: Утро у воды
+    metadata: 45 мин · 4 остановки
+    description: От Сенатской площади к Зимнему дворцу, вдоль Невы и гранитных набережных.
+    image_alt: Памятник «Медный всадник» на фоне голубого неба у Невы.
+    stops_label: Остановки на маршруте
+    stops:
+      - Медный всадник
+      - Адмиралтейская набережная
+      - Дворцовый мост
+      - Зимний дворец со стороны Невы
+    photo_credit: "Фото: Alex (Florstein) Fedorov"
+    photo_source: Wikimedia Commons
+    photo_changes: Кадрирование при отображении.
   documents: Документы и поддержка
   intro: Конфиденциальность, условия использования и помощь для приложения Video Vibe.
   skip: Перейти к содержимому
