@@ -1,7 +1,8 @@
-# Video Vibe — legal website
+# Video Vibe — Privacy Policy
 
-Простой статический сайт для информации о приложении и Privacy Policy.
-Хостинг — GitHub Pages, публикация из ветки `main`, папки `/`.
+Сайт с информацией о политике конфиденциальности (Privacy Policy) приложения **Video Vibe**.
+В этом репозитории хранятся исходные файлы сайта. Хостинг — GitHub Pages,
+публикация из ветки `main`, папки `/`.
 
 - Сайт: https://ilyakozar-oss.github.io/video-vibe-legal/
 - Privacy Policy: https://ilyakozar-oss.github.io/video-vibe-legal/privacy/
