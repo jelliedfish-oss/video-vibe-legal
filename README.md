@@ -2,8 +2,8 @@
 
 Двуязычный landing приложения Video Vibe: главная, Privacy Policy, Terms of Use и Help & Support. Хостинг — GitHub Pages из `main`, папки `/`.
 
-- English: https://ilyakozar-oss.github.io/video-vibe-legal/en/
-- Русский: https://ilyakozar-oss.github.io/video-vibe-legal/ru/
+- English: https://jelliedfish-oss.github.io/video-vibe-legal/en/
+- Русский: https://jelliedfish-oss.github.io/video-vibe-legal/ru/
 - Разделы: `/{en,ru}/privacy/`, `/{en,ru}/terms/`, `/{en,ru}/help/`.
 - Прежний адрес `/privacy/` сохранён для совместимости.
 
