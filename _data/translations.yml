@@ -1,0 +1,34 @@
+en:
+  app_information: App information
+  intro: Privacy, terms and support information for the Video Vibe app.
+  skip: Skip to content
+  home_label: Video Vibe home
+  navigation: Main navigation
+  language: Language
+  status: Coming soon
+  placeholder: Information will appear here soon.
+  back: Back to app information
+  sections:
+    privacy:
+      title: Privacy Policy
+    terms:
+      title: Terms of Use
+    help:
+      title: Help & Support
+ru:
+  app_information: Информация о приложении
+  intro: Конфиденциальность, условия использования и помощь для приложения Video Vibe.
+  skip: Перейти к содержимому
+  home_label: Главная Video Vibe
+  navigation: Основная навигация
+  language: Язык
+  status: Скоро
+  placeholder: Здесь скоро появится информация.
+  back: К информации о приложении
+  sections:
+    privacy:
+      title: Политика конфиденциальности
+    terms:
+      title: Условия использования
+    help:
+      title: Помощь и поддержка

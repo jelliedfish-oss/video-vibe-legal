@@ -1,31 +1,16 @@
-# Video Vibe — Privacy Policy
+# Video Vibe — app information website
 
-Сайт с информацией о политике конфиденциальности (Privacy Policy) приложения **Video Vibe**.
-В этом репозитории хранятся исходные файлы сайта. Хостинг — GitHub Pages,
-публикация из ветки `main`, папки `/`.
+Двуязычный landing приложения Video Vibe: главная, Privacy Policy, Terms of Use и Help & Support. Хостинг — GitHub Pages из `main`, папки `/`.
 
-- Сайт: https://ilyakozar-oss.github.io/video-vibe-legal/
-- Privacy Policy: https://ilyakozar-oss.github.io/video-vibe-legal/privacy/
+- English: https://ilyakozar-oss.github.io/video-vibe-legal/en/
+- Русский: https://ilyakozar-oss.github.io/video-vibe-legal/ru/
+- Разделы: `/{en,ru}/privacy/`, `/{en,ru}/terms/`, `/{en,ru}/help/`.
+- Прежний адрес `/privacy/` сохранён для совместимости.
 
-## Как добавить Privacy Policy
+Пока во всех разделах стоит явный текст-заглушка. Юридические тексты ещё не опубликованы.
 
-1. Откройте [privacy.md](privacy.md) и замените текст-заглушку утверждённой политикой. Можно использовать Markdown: заголовки, списки и ссылки.
-2. В начале этого же файла поменяйте `policy_status: pending` на `policy_status: published`. Исчезнет уведомление о подготовке, обновится описание ссылки на главной странице и разрешится индексация страницы политики.
-3. Сохраните изменения коммитом в `main`. GitHub Pages автоматически опубликует новую версию; обычно это занимает несколько минут.
+## Как добавить текст
 
-Пока стоит `pending`, страница явно обозначена как незаполненная. Готовый юридический текст ещё не опубликован.
+Откройте соответствующий файл `en/{privacy,terms,help}.md` или `ru/{privacy,terms,help}.md`, замените include на согласованный Markdown-текст и добавьте в front matter `content_status: published`. Пока статус pending, страница не индексируется. Общие подписи находятся в `_data/translations.yml`; шаблон — `_layouts/default.html`, оформление — `assets/styles.css`.
 
-## Файлы
-
-- `privacy.md` — текст Privacy Policy и статус готовности.
-- `index.md` — главная страница.
-- `_layouts/default.html` — общий шаблон, навигация и метаданные.
-- `assets/styles.css` — оформление и мобильная адаптация.
-- `_config.yml` — адрес сайта и настройки Jekyll.
-- `404.html` — страница для несуществующих адресов.
-
-Сайт использует встроенную сборку Jekyll на GitHub Pages. JavaScript, внешние шрифты, аналитика и сторонние пакеты не добавлены. Секреты и токены для публикации из ветки не требуются.
-
-## Если меняется имя репозитория или подключается домен
-
-Обновите `url` и `baseurl` в `_config.yml`. Внутренние ссылки используют `relative_url`, поэтому работают в подпапке GitHub Pages. Для собственного домена настройте его в **Settings → Pages** и включите HTTPS после проверки DNS.
+Сайт использует Jekyll GitHub Pages; внешние шрифты, аналитика и JavaScript не добавлены. При смене домена/репозитория обновите `url` и `baseurl` в `_config.yml`. Внутренние ссылки учитывают baseurl.

@@ -1,9 +1,18 @@
 title: Video Vibe
-description: App information and privacy documents for Video Vibe.
+description: Privacy, terms and support information for Video Vibe.
 url: "https://ilyakozar-oss.github.io"
 baseurl: "/video-vibe-legal"
 lang: en
+languages: [en, ru]
+legal_sections: [privacy, terms, help]
 markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      lang: en
+      content_status: pending
 exclude:
   - README.md
   - Gemfile

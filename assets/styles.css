@@ -16,7 +16,7 @@ a { color: var(--accent); text-underline-offset: .22em; }
 a:hover { text-decoration-thickness: 2px; }
 a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; border-radius: 4px; }
 .wrap { width: min(100% - 48px, 1000px); margin-inline: auto; }
-.site-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 28px; border-bottom: 1px solid var(--line); }
+.site-header { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; padding-block: 28px; border-bottom: 1px solid var(--line); }
 .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--text); font-size: 1.1rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
 .brand-icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 13px; background: var(--accent); color: #101425; font-size: 24px; font-weight: 800; }
 nav a { font-size: .9rem; display: inline-block; padding-block: 10px; }
@@ -48,4 +48,19 @@ h1 { margin: 0 0 24px; font-size: clamp(2.5rem, 7vw, 4.7rem); font-weight: 750; 
   nav a { font-size: .8rem; }
   .site-main { padding-block: 52px 64px; }
   .policy-card { padding: 24px 20px; }
+}
+
+.primary-nav { grid-column: 1 / -1; display: flex; flex-wrap: wrap; column-gap: 24px; row-gap: 2px; }
+.primary-nav a, .language-switch a { min-height: 44px; display: inline-flex; align-items: center; }
+.primary-nav a[aria-current="page"] { color: var(--text); font-weight: 700; }
+.language-switch { display: flex; gap: 4px; }
+.language-switch a { padding-inline: 12px; text-decoration: none; border: 1px solid transparent; border-radius: 10px; }
+.language-switch a[aria-current="page"] { background: var(--surface); border-color: var(--line); color: var(--text); }
+.policy-list { display: grid; gap: 16px; }
+.back-link { display: inline-block; min-height: 44px; padding-block: 10px; }
+.site-footer { flex-wrap: wrap; }
+@media (max-width: 480px) {
+  .primary-nav { column-gap: 16px; }
+  .language-switch a { padding-inline: 8px; }
+  .card-title { font-size: 1.2rem; }
 }
